@@ -1,0 +1,46 @@
+#################### MYSQL ###################
+
+CREATE DATABASE crud;
+
+CREATE TABLE usuario(
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255),
+    idade VARCHAR(10),
+    email VARCHAR(255)
+);
+
+INSERT INTO usuario(nome, idade, email) VALUES ('Joãozinho', '16', 'joao_93@hotmail.com');
+
+INSERT INTO usuario(nome, idade, email) VALUES ('Mariazinha', '25', 'maria_db@gmail.com');
+
+INSERT INTO usuario(nome, idade, email) VALUES ('Guilherme', '43', 'gui_menezes@gmail.com');
+
+INSERT INTO usuario(nome, idade, email) VALUES ('Rafael Souto', '22', 'soutinho_que_nem_arroz@gmail.com');
+
+
+
+############### POSTGRESQL #################
+
+#### Ativar o postgreSQL no codeigniter
+1. Open php.ini
+2. Find ;extension=php_pgsql.dll and remove the semicolon at the beginning
+3. Find ;extension=php_pdo_pgsql.dll and remove the semicolon at the beginning
+4. Save the file
+5. Restart apache
+
+
+
+CREATE TABLE usuario(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255),
+    idade VARCHAR(10),
+    email VARCHAR(255)
+);
+
+INSERT INTO usuario(nome, idade, email) VALUES ('Joãozinho', '16', 'joao_93@hotmail.com');
+
+INSERT INTO usuario(nome, idade, email) VALUES ('Mariazinha', '25', 'maria_db@gmail.com');
+
+INSERT INTO usuario(nome, idade, email) VALUES ('Guilherme', '43', 'gui_menezes@gmail.com');
+
+INSERT INTO usuario(nome, idade, email) VALUES ('Rafael Souto', '22', 'soutinho_que_nem_arroz@gmail.com');
