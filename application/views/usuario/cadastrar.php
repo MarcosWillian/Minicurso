@@ -8,14 +8,14 @@
 			</div>					
 
 			<div class="col-md-3">
-				<a href="<?php echo site_url("usuario/cadastrar"); ?>" class="btn btn-danger pull-right h2">
+				<a href="<?php echo site_url("usuario"); ?>" class="btn btn-danger pull-right h2">
 					Voltar
 				</a>
 			</div>
 		</div>
 		
 		<br class="clear">
-		<form action="<?php echo site_url('usuario/funcao_cadastrar'); ?>" method="POST" class="col-md-offset-2 col-md-8">
+		<form action="<?php echo site_url('funcao_cadastrar'); ?>" method="POST" class="col-md-offset-2 col-md-8">
 
 			<div class="row" style="margin-top: 30px;">
 	            <div class="col-md-6">

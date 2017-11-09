@@ -50,10 +50,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'usuario';
-$route['usuario/cadastrar'] = 'usuario/cadastrar';
+$route['cadastro'] = 'usuario/cadastrar';
 $route['usuario/editar'] = 'usuario/editar';
-$route['usuario/funcao_cadastrar'] = 'usuario/funcao_cadastrar';
-$route['usuario/funcao_editar'] = 'usuario/funcao_editar';
+$route['funcao_cadastrar'] = 'usuario/funcao_cadastrar';
+$route['funcao_editar'] = 'usuario/funcao_editar';
 $route['usuario/funcao_excluir'] = 'usuario/funcao_excluir';
 
 $route['404_override'] = '';

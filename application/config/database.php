@@ -80,7 +80,7 @@ $query_builder = TRUE;
 3. Find ;extension=php_pdo_pgsql.dll and remove the semicolon at the beginning
 4. Save the file
 5. Restart apache
- */
+ 
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'postgres';
@@ -98,28 +98,24 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 $db['default']['port'] = 5432;
+*/
 
-/*
 $db['default'] = array(
-	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'username' => 'postgres',
+	'password' => 'will1234',
 	'database' => 'crud',
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'postgre',
 	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
+	'pconnect' => TRUE,
+	'db_debug' => TRUE,
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
+	'autoinit' => TRUE,
 	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE	
-Share this:
+	'port' => 5432	
 );
-*/
+

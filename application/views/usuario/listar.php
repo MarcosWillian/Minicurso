@@ -25,7 +25,7 @@
 			</div>		
 
 			<div class="col-md-3">
-				<a href="<?php echo site_url("usuario/cadastrar"); ?>" class="btn btn-primary pull-right h2">
+				<a href="<?php echo site_url("cadastro"); ?>" class="btn btn-primary pull-right h2">
 					Novo Usuário
 				</a>
 			</div>
